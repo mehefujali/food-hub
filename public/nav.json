@@ -1,0 +1,32 @@
+[
+      {
+            "name": "Home",
+            "path": "/home",
+            "description": "Displays featured meals or default data."
+      },
+      {
+            "name": "All Foods",
+            "path": "/all-foods",
+            "description": "Browse all available meals."
+      },
+      {
+            "name": "Meal Categories",
+            "path": "/categories",
+            "description": "Browse meals by category."
+      },
+      {
+            "name": "About Us",
+            "path": "/about",
+            "description": "Information about our mission and team."
+      },
+      {
+            "name": "Contact Us",
+            "path": "/contact",
+            "description": "Get in touch with us for queries and support."
+      },
+      {
+            "name": "Subscription",
+            "path": "/subscribe",
+            "description": "Subscribe to our newsletter for updates."
+      }
+]

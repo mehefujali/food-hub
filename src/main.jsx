@@ -6,11 +6,24 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import Root from './Root/Root';
+import Home from './Home/Home';
+import Error from './Error/Error';
 
 const router = createBrowserRouter([
   {
+    errorElement: <Error></Error>
+  },
+  {
     path: "/",
-    element: <div>Hello world!</div>,
+    element: <Root></Root>,
+    children: [
+      {
+        path: "/home",
+        loader: () => fetch('www.themealdb.com/api/json/v1/1/search.php?f=a'),
+        element: <Home></Home>
+      }
+    ]
   },
 ]);
 
